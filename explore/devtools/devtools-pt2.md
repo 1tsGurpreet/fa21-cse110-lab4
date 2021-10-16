@@ -1,0 +1,2 @@
+1) The bug was that the parameters num1 and num2 were strings and result was being set by doing num1+num2. Since num1 and num2 are strings javascript sees the plus and results to concatenation.
+2) I would fix this by changing the expression that defines result to (num1 - 0) + (num2 - 0) so that both num1 and num2 are changed to numbers before adding. 
